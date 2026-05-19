@@ -333,9 +333,6 @@ main {
 ::-webkit-scrollbar-track { background: transparent; }
 ::-webkit-scrollbar-thumb { background: var(--border); }
 
-
-------
-:root {
       --bg: #f5f2ec;
       --surface: #faf8f4;
       --border: #d8d2c6;
