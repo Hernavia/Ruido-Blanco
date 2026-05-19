@@ -332,3 +332,217 @@ main {
 ::-webkit-scrollbar { width: 4px; }
 ::-webkit-scrollbar-track { background: transparent; }
 ::-webkit-scrollbar-thumb { background: var(--border); }
+
+
+------
+:root {
+      --bg: #f5f2ec;
+      --surface: #faf8f4;
+      --border: #d8d2c6;
+      --text: #1a1814;
+      --muted: #8a8278;
+      --accent: #2c2c2c;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background-color: var(--bg);
+      font-family: 'IBM Plex Mono', monospace;
+      color: var(--text);
+      min-height: 100vh;
+    }
+
+    /* ── BACK NAV ── */
+    .nav {
+      padding: 1.4rem 3rem;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav a {
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--muted);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+    .nav a:hover { color: var(--text); }
+
+    .nav .site-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    /* ── ARTICLE LAYOUT ── */
+    .article-wrap {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 4rem 2rem 6rem;
+    }
+
+    /* ── HEADER ── */
+    .article-meta {
+      font-size: 0.62rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 1.2rem;
+    }
+
+    .article-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 700;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      margin-bottom: 2.5rem;
+    }
+
+    .article-divider {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin-bottom: 2.5rem;
+    }
+
+    /* ── BODY ── */
+    .article-body p {
+      font-size: 0.88rem;
+      line-height: 1.9;
+      color: var(--text);
+      margin-bottom: 1.6rem;
+    }
+
+    /* highlight de frases clave */
+    .article-body strong {
+      font-weight: 400;
+      background: rgba(44,44,44,0.07);
+      padding: 0.05em 0.3em;
+    }
+
+    /* pullquote */
+    .pullquote {
+      border-left: 3px solid var(--accent);
+      margin: 2.5rem 0;
+      padding: 0.8rem 1.4rem;
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: 1.15rem;
+      line-height: 1.5;
+      color: var(--accent);
+    }
+
+    /* tip blocks */
+    .tip {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--accent);
+      padding: 1rem 1.2rem;
+      margin: 2rem 0;
+      font-size: 0.78rem;
+      line-height: 1.75;
+      color: var(--muted);
+    }
+    .tip strong {
+      background: none;
+      font-weight: 400;
+      color: var(--text);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-size: 0.6rem;
+      display: block;
+      margin-bottom: 0.4rem;
+    }
+
+    /* ── FOOTER / RESPUESTAS ── */
+    .article-footer {
+      margin-top: 5rem;
+      border-top: 1px solid var(--border);
+      padding-top: 2.5rem;
+    }
+
+    .footer-label {
+      font-size: 0.62rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 1.4rem;
+    }
+
+    .messages-list {
+      margin-bottom: 1.4rem;
+    }
+
+    .message-item {
+      padding: 0.8rem 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.78rem;
+      line-height: 1.7;
+    }
+    .message-item:last-child { border-bottom: none; }
+    .msg-time {
+      font-size: 0.6rem;
+      color: var(--muted);
+      margin-bottom: 0.2rem;
+    }
+
+    .compose-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      padding: 1.2rem;
+    }
+
+    .compose-box textarea {
+      width: 100%;
+      min-height: 90px;
+      background: transparent;
+      border: none;
+      outline: none;
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.8rem;
+      color: var(--text);
+      resize: none;
+      line-height: 1.7;
+    }
+    .compose-box textarea::placeholder { color: var(--muted); }
+
+    .compose-actions {
+      display: flex;
+      justify-content: flex-end;
+      border-top: 1px solid var(--border);
+      padding-top: 0.8rem;
+      margin-top: 0.4rem;
+    }
+
+    .send-btn {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      background: var(--text);
+      color: var(--bg);
+      border: none;
+      padding: 0.55rem 1.2rem;
+      cursor: pointer;
+      transition: opacity 0.15s;
+    }
+    .send-btn:hover { opacity: 0.75; }
+
+    .sent-msg {
+      font-size: 0.65rem;
+      color: var(--muted);
+      letter-spacing: 0.1em;
+      margin-top: 0.6rem;
+      display: none;
+    }
+
+    /* scrollbar */
+    ::-webkit-scrollbar { width: 4px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: var(--border); }
