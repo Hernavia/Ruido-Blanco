@@ -4,12 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Ruido Blanco</title>
-
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Mono:wght@300;400&display=swap" rel="stylesheet"/>
-
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
   <header>
@@ -22,6 +19,27 @@
 
     <div class="articles">
 
+      <article class="card" onclick="window.location.href='que-es.html'">
+        <div class="card-header">
+          <div class="card-num">Entrada 000 · Mayo 2025</div>
+          <h2>¿Qué es Ruido Blanco?</h2>
+        </div>
+        <div class="card-body">
+          <p>
+            Por qué existe este proyecto, de dónde viene
+            y hacia dónde apunta.
+          </p>
+          <div class="card-footer">
+            <span>2 min de lectura</span>
+            <button
+              class="open-btn"
+              onclick="event.stopPropagation(); window.location.href='que-es.html'">
+              Abrir →
+            </button>
+          </div>
+        </div>
+      </article>
+
       <article class="card" onclick="window.location.href='como-empezar.html'">
         <div class="card-header">
           <div class="card-num">Entrada 001 · Mayo 2025</div>
@@ -33,7 +51,7 @@
             o hobbie que tienes en mente.
           </p>
           <div class="card-footer">
-            <span>6 min de lectura</span>
+            <span>3 min de lectura</span>
             <button
               class="open-btn"
               onclick="event.stopPropagation(); window.location.href='como-empezar.html'">
@@ -64,38 +82,15 @@
         </div>
       </article>
 
-      <article class="card" onclick="window.location.href='interferencia.html'">
-        <div class="card-header">
-          <div class="card-num">Entrada 003 · Marzo 2025</div>
-          <h2>Interferencia</h2>
-        </div>
-        <div class="card-body">
-          <p>
-            Cuando dos personas hablan al mismo tiempo
-            sin escucharse, algo extraño aparece.
-          </p>
-          <div class="card-footer">
-            <span>5 min de lectura</span>
-            <button
-              class="open-btn"
-              onclick="event.stopPropagation(); window.location.href='interferencia.html'">
-              Abrir →
-            </button>
-          </div>
-        </div>
-      </article>
-
     </div>
 
     <div class="compose-section">
       <div class="compose-label">— Deja un fragmento general</div>
-
       <div class="compose-box">
         <textarea
           id="global-input"
           placeholder="Escribe lo que quieras dejar aquí...">
         </textarea>
-
         <div class="compose-actions">
           <button
             class="send-btn"
@@ -104,7 +99,6 @@
           </button>
         </div>
       </div>
-
       <div class="sent-msg" id="global-sent">
         Fragmento recibido.
       </div>
@@ -112,6 +106,5 @@
   </main>
 
   <script src="script.js"></script>
-
 </body>
 </html>
