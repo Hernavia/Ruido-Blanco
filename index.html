@@ -22,72 +22,63 @@
 
     <div class="articles">
 
-      <article class="card" onclick="openModal('modal1')">
+      <article class="card" onclick="window.location.href='como-empezar.html'">
         <div class="card-header">
           <div class="card-num">Entrada 001 · Mayo 2025</div>
-          <h2>El silencio también tiene textura</h2>
+          <h2>¿Cómo empezar?</h2>
         </div>
-
         <div class="card-body">
           <p>
-            Hay ruidos que no se escuchan. Están ahí,
-            en el fondo de cada cuarto vacío.
+            Ayuda para que puedas iniciar esa idea, proyecto
+            o hobbie que tienes en mente.
           </p>
-
           <div class="card-footer">
-            <span>4 min de lectura</span>
-
+            <span>6 min de lectura</span>
             <button
               class="open-btn"
-              onclick="event.stopPropagation(); openModal('modal1')">
+              onclick="event.stopPropagation(); window.location.href='como-empezar.html'">
               Abrir →
             </button>
           </div>
         </div>
       </article>
 
-      <article class="card" onclick="openModal('modal2')">
+      <article class="card" onclick="window.location.href='frecuencias.html'">
         <div class="card-header">
           <div class="card-num">Entrada 002 · Abril 2025</div>
           <h2>Frecuencias que nadie sintonizó</h2>
         </div>
-
         <div class="card-body">
           <p>
             Cada ciudad emite una señal distinta
             a las tres de la mañana.
           </p>
-
           <div class="card-footer">
-            <span>6 min de lectura</span>
-
+            <span>4 min de lectura</span>
             <button
               class="open-btn"
-              onclick="event.stopPropagation(); openModal('modal2')">
+              onclick="event.stopPropagation(); window.location.href='frecuencias.html'">
               Abrir →
             </button>
           </div>
         </div>
       </article>
 
-      <article class="card" onclick="openModal('modal3')">
+      <article class="card" onclick="window.location.href='interferencia.html'">
         <div class="card-header">
           <div class="card-num">Entrada 003 · Marzo 2025</div>
           <h2>Interferencia</h2>
         </div>
-
         <div class="card-body">
           <p>
             Cuando dos personas hablan al mismo tiempo
             sin escucharse, algo extraño aparece.
           </p>
-
           <div class="card-footer">
             <span>5 min de lectura</span>
-
             <button
               class="open-btn"
-              onclick="event.stopPropagation(); openModal('modal3')">
+              onclick="event.stopPropagation(); window.location.href='interferencia.html'">
               Abrir →
             </button>
           </div>
@@ -97,9 +88,7 @@
     </div>
 
     <div class="compose-section">
-      <div class="compose-label">
-        — Deja un fragmento general
-      </div>
+      <div class="compose-label">— Deja un fragmento general</div>
 
       <div class="compose-box">
         <textarea
@@ -121,186 +110,6 @@
       </div>
     </div>
   </main>
-
-  <!-- MODAL 1 -->
-
-  <div class="modal-overlay" id="modal1">
-    <div class="modal">
-
-      <div class="modal-head">
-        <h2>El silencio también tiene textura</h2>
-
-        <button
-          class="close-btn"
-          onclick="closeModal('modal1')">
-          ✕
-        </button>
-      </div>
-
-      <div class="modal-body">
-        <p>
-          Hay ruidos que no se escuchan con los oídos.
-        </p>
-
-        <blockquote>
-          "El ruido blanco no borra los pensamientos."
-        </blockquote>
-
-        <p>
-          Esta entrada es un experimento.
-        </p>
-      </div>
-
-      <div class="modal-footer">
-
-        <div class="compose-label">
-          — Responde a esta entrada
-        </div>
-
-        <div class="messages-list" id="msgs-modal1"></div>
-
-        <div class="compose-box">
-          <textarea
-            id="input-modal1"
-            placeholder="Tu respuesta...">
-          </textarea>
-
-          <div class="compose-actions">
-            <button
-              class="send-btn"
-              onclick="sendMessage('input-modal1', 'sent-modal1', 'msgs-modal1')">
-              Enviar
-            </button>
-          </div>
-        </div>
-
-        <div class="sent-msg" id="sent-modal1">
-          Fragmento recibido.
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-  <!-- MODAL 2 -->
-
-  <div class="modal-overlay" id="modal2">
-    <div class="modal">
-
-      <div class="modal-head">
-        <h2>Frecuencias que nadie sintonizó</h2>
-
-        <button
-          class="close-btn"
-          onclick="closeModal('modal2')">
-          ✕
-        </button>
-      </div>
-
-      <div class="modal-body">
-        <p>
-          Cada ciudad emite una señal distinta.
-        </p>
-
-        <blockquote>
-          "Hay frecuencias que solo existen porque nadie las escucha."
-        </blockquote>
-
-        <p>
-          Algunas señales siguen flotando.
-        </p>
-      </div>
-
-      <div class="modal-footer">
-
-        <div class="compose-label">
-          — Responde a esta entrada
-        </div>
-
-        <div class="messages-list" id="msgs-modal2"></div>
-
-        <div class="compose-box">
-          <textarea
-            id="input-modal2"
-            placeholder="Tu respuesta...">
-          </textarea>
-
-          <div class="compose-actions">
-            <button
-              class="send-btn"
-              onclick="sendMessage('input-modal2', 'sent-modal2', 'msgs-modal2')">
-              Enviar
-            </button>
-          </div>
-        </div>
-
-        <div class="sent-msg" id="sent-modal2">
-          Fragmento recibido.
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-  <!-- MODAL 3 -->
-
-  <div class="modal-overlay" id="modal3">
-    <div class="modal">
-
-      <div class="modal-head">
-        <h2>Interferencia</h2>
-
-        <button
-          class="close-btn"
-          onclick="closeModal('modal3')">
-          ✕
-        </button>
-      </div>
-
-      <div class="modal-body">
-        <p>
-          Algunas conversaciones se cancelan entre sí.
-        </p>
-
-        <blockquote>
-          "Las conversaciones que más duelen son las que se cancelaron."
-        </blockquote>
-
-        <p>
-          A veces las ondas no coinciden.
-        </p>
-      </div>
-
-      <div class="modal-footer">
-
-        <div class="compose-label">
-          — Responde a esta entrada
-        </div>
-
-        <div class="messages-list" id="msgs-modal3"></div>
-
-        <div class="compose-box">
-          <textarea
-            id="input-modal3"
-            placeholder="Tu respuesta...">
-          </textarea>
-
-          <div class="compose-actions">
-            <button
-              class="send-btn"
-              onclick="sendMessage('input-modal3', 'sent-modal3', 'msgs-modal3')">
-              Enviar
-            </button>
-          </div>
-        </div>
-
-        <div class="sent-msg" id="sent-modal3">
-          Fragmento recibido.
-        </div>
-
-      </div>
-    </div>
-  </div>
 
   <script src="script.js"></script>
 
