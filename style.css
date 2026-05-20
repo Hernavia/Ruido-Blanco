@@ -332,7 +332,7 @@ main {
 }
 
 /* ─────────────────────────────
-   ARTÍCULO — FOOTER RESPUESTAS
+   ARTÍCULO — FOOTHER
 ───────────────────────────── */
 .article-footer {
   margin-top: 5rem;
@@ -356,6 +356,27 @@ main {
   font-size: 0.6rem;
   color: var(--muted);
   margin-bottom: 0.2rem;
+}
+
+.footer{
+  margin-top:5rem;
+  padding-top:1.5rem;
+  border-top:1px solid var(--border);
+
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:1rem;
+  flex-wrap:wrap;
+
+  font-size:0.68rem;
+  letter-spacing:0.08em;
+  color:var(--muted);
+  text-transform:uppercase;
+}
+
+.footer span{
+  opacity:0.7;
 }
 
 /* ─────────────────────────────
