@@ -332,51 +332,28 @@ main {
 }
 
 /* ─────────────────────────────
-   ARTÍCULO — FOOTHER
+   FOOTER
 ───────────────────────────── */
-.article-footer {
-  margin-top: 5rem;
+.footer {
   border-top: 1px solid var(--border);
-  padding-top: 2.5rem;
+  padding: 2rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.messages-list {
-  margin-bottom: 1.4rem;
+.footer p {
+  font-family: 'Playfair Display', serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text);
 }
 
-.message-item {
-  padding: 0.8rem 0;
-  border-bottom: 1px solid var(--border);
-  font-size: 0.78rem;
-  line-height: 1.7;
-}
-.message-item:last-child { border-bottom: none; }
-
-.msg-time {
-  font-size: 0.6rem;
+.footer span {
+  font-size: 0.62rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
   color: var(--muted);
-  margin-bottom: 0.2rem;
-}
-
-.footer{
-  margin-top:5rem;
-  padding-top:1.5rem;
-  border-top:1px solid var(--border);
-
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  gap:1rem;
-  flex-wrap:wrap;
-
-  font-size:0.68rem;
-  letter-spacing:0.08em;
-  color:var(--muted);
-  text-transform:uppercase;
-}
-
-.footer span{
-  opacity:0.7;
 }
 
 /* ─────────────────────────────
