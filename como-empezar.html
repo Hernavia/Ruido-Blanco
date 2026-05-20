@@ -71,33 +71,17 @@
       <div class="compose-box">
         <textarea id="reply-input" placeholder="Dejá tu fragmento acá..."></textarea>
         <div class="compose-actions">
-          <button class="send-btn" onclick="sendMessage()">Enviar</button>
+          <button
+  class="send-btn"
+  onclick="sendMessage('reply-input', 'sent-msg', 'como-empezar')">
+  Enviar
+</button>
         </div>
       </div>
       <div class="sent-msg" id="sent-msg">Fragmento recibido.</div>
     </div>
 
   </article>
-
-  <script>
-    function sendMessage() {
-      const textarea = document.getElementById('reply-input');
-      const text = textarea.value.trim();
-      if (!text) return;
-
-      const list = document.getElementById('msgs');
-      const item = document.createElement('div');
-      item.className = 'message-item';
-      const time = new Date().toLocaleTimeString('es-CO', { hour: '2-digit', minute: '2-digit' });
-      item.innerHTML = `<div class="msg-time">${time}</div><div>${text}</div>`;
-      list.appendChild(item);
-
-      textarea.value = '';
-      const sent = document.getElementById('sent-msg');
-      sent.style.display = 'block';
-      setTimeout(() => sent.style.display = 'none', 2500);
-    }
-  </script>
-
+<script src="script.js"></script>
 </body>
 </html>
