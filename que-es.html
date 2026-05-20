@@ -50,7 +50,11 @@
       <div class="compose-box">
         <textarea id="reply-input" placeholder="Dejá tu fragmento acá..."></textarea>
         <div class="compose-actions">
-          <button class="send-btn" onclick="sendMessage()">Enviar</button>
+          <button
+  class="send-btn"
+  onclick="sendMessage('reply-input', 'sent-msg', 'que-es')">
+  Enviar
+</button>
         </div>
       </div>
       <div class="sent-msg" id="sent-msg">Fragmento recibido.</div>
