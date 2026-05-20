@@ -25,17 +25,10 @@
           <h2>¿Qué es Ruido Blanco?</h2>
         </div>
         <div class="card-body">
-          <p>
-            Por qué existe este proyecto, de dónde viene
-            y hacia dónde apunta.
-          </p>
+          <p>Por qué existe este proyecto, de dónde viene y hacia dónde apunta.</p>
           <div class="card-footer">
-            <span>2 min de lectura</span>
-            <button
-              class="open-btn"
-              onclick="event.stopPropagation(); window.location.href='que-es.html'">
-              Abrir →
-            </button>
+            <span>3 min de lectura</span>
+            <button class="open-btn" onclick="event.stopPropagation(); window.location.href='que-es.html'">Abrir →</button>
           </div>
         </div>
       </article>
@@ -46,38 +39,10 @@
           <h2>¿Cómo empezar?</h2>
         </div>
         <div class="card-body">
-          <p>
-            Ayuda para que puedas iniciar esa idea, proyecto
-            o hobbie que tienes en mente.
-          </p>
+          <p>Ayuda para que puedas iniciar esa idea, proyecto o hobbie que tienes en mente.</p>
           <div class="card-footer">
-            <span>3 min de lectura</span>
-            <button
-              class="open-btn"
-              onclick="event.stopPropagation(); window.location.href='como-empezar.html'">
-              Abrir →
-            </button>
-          </div>
-        </div>
-      </article>
-
-      <article class="card" onclick="window.location.href='frecuencias.html'">
-        <div class="card-header">
-          <div class="card-num">Entrada 002 · Abril 2025</div>
-          <h2>Frecuencias que nadie sintonizó</h2>
-        </div>
-        <div class="card-body">
-          <p>
-            Cada ciudad emite una señal distinta
-            a las tres de la mañana.
-          </p>
-          <div class="card-footer">
-            <span>4 min de lectura</span>
-            <button
-              class="open-btn"
-              onclick="event.stopPropagation(); window.location.href='frecuencias.html'">
-              Abrir →
-            </button>
+            <span>6 min de lectura</span>
+            <button class="open-btn" onclick="event.stopPropagation(); window.location.href='como-empezar.html'">Abrir →</button>
           </div>
         </div>
       </article>
@@ -87,21 +52,12 @@
     <div class="compose-section">
       <div class="compose-label">— Deja un fragmento general</div>
       <div class="compose-box">
-        <textarea
-          id="global-input"
-          placeholder="Escribe lo que quieras dejar aquí...">
-        </textarea>
+        <textarea id="global-input" placeholder="Escribe lo que quieras dejar aquí..."></textarea>
         <div class="compose-actions">
-          <button
-            class="send-btn"
-            onclick="sendMessage('global-input', 'global-sent')">
-            Enviar
-          </button>
+          <button class="send-btn" onclick="sendMessage('global-input', 'global-sent', 'general')">Enviar</button>
         </div>
       </div>
-      <div class="sent-msg" id="global-sent">
-        Fragmento recibido.
-      </div>
+      <div class="sent-msg" id="global-sent">Fragmento recibido.</div>
     </div>
   </main>
 
